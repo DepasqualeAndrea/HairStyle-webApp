@@ -1,0 +1,102 @@
+{
+    "common": {
+        "welcome": "Welcome",
+        "continue": "Continue",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "back": "Back",
+        "next": "Next",
+        "confirm": "Confirm",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success"
+    },
+    "auth": {
+        "login": "Log In",
+        "register": "Sign Up",
+        "logout": "Log Out",
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "phone": "Phone",
+        "forgotPassword": "Forgot password?",
+        "dontHaveAccount": "Don't have an account?",
+        "alreadyHaveAccount": "Already have an account?",
+        "loginWith": "Log in with",
+        "orContinueWith": "Or continue with"
+    },
+    "home": {
+        "greeting": "Hello, {{name}}!",
+        "searchPlaceholder": "Search services or treatments...",
+        "lastAppointment": "Last Appointment",
+        "noAppointments": "No recent appointments",
+        "nearbyShops": "Nearby Barbers",
+        "popularServices": "Popular Services"
+    },
+    "services": {
+        "title": "Services",
+        "allCategories": "All Categories",
+        "haircut": "Haircut",
+        "shave": "Shave",
+        "treatments": "Treatments",
+        "styling": "Styling",
+        "duration": "Duration",
+        "price": "Price",
+        "selectService": "Select Service",
+        "serviceDetails": "Service Details",
+        "popular": "Popular"
+    },
+    "booking": {
+        "title": "Book",
+        "selectServices": "Select Services",
+        "selectStaff": "Select Barber",
+        "selectDateTime": "Select Date & Time",
+        "checkout": "Summary",
+        "totalDuration": "Total Duration",
+        "totalPrice": "Total",
+        "paymentMethod": "Payment Method",
+        "payOnline": "Pay Online",
+        "payInPerson": "Pay In Person",
+        "onlineDiscount": "5% discount for online payment",
+        "confirmBooking": "Confirm Booking",
+        "bookingConfirmed": "Booking Confirmed!",
+        "noSlotsAvailable": "No slots available",
+        "selectAtLeastOne": "Select at least one service"
+    },
+    "appointments": {
+        "title": "My Appointments",
+        "upcoming": "Upcoming",
+        "past": "Past",
+        "status": "Status",
+        "pending": "Pending",
+        "confirmed": "Confirmed",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "reschedule": "Reschedule",
+        "cancelAppointment": "Cancel Appointment"
+    },
+    "profile": {
+        "title": "Profile",
+        "editProfile": "Edit Profile",
+        "accountSettings": "Account Settings",
+        "notifications": "Notifications",
+        "language": "Language",
+        "membershipTier": "Membership Tier",
+        "appointmentReminders": "Appointment Reminders",
+        "promotions": "Promotions & Offers"
+    },
+    "admin": {
+        "dashboard": "Dashboard",
+        "calendar": "Calendar",
+        "services": "Service Management",
+        "analytics": "Analytics",
+        "todaysAppointments": "Today's Appointments",
+        "revenue": "Revenue",
+        "clients": "Clients",
+        "addService": "Add Service",
+        "editService": "Edit Service",
+        "deleteService": "Delete Service"
+    }
+}

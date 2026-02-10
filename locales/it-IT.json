@@ -1,0 +1,102 @@
+{
+    "common": {
+        "welcome": "Benvenuto",
+        "continue": "Continua",
+        "cancel": "Annulla",
+        "save": "Salva",
+        "delete": "Elimina",
+        "edit": "Modifica",
+        "back": "Indietro",
+        "next": "Avanti",
+        "confirm": "Conferma",
+        "loading": "Caricamento...",
+        "error": "Errore",
+        "success": "Successo"
+    },
+    "auth": {
+        "login": "Accedi",
+        "register": "Registrati",
+        "logout": "Esci",
+        "email": "Email",
+        "password": "Password",
+        "name": "Nome",
+        "phone": "Telefono",
+        "forgotPassword": "Password dimenticata?",
+        "dontHaveAccount": "Non hai un account?",
+        "alreadyHaveAccount": "Hai già un account?",
+        "loginWith": "Accedi con",
+        "orContinueWith": "Oppure continua con"
+    },
+    "home": {
+        "greeting": "Ciao, {{name}}!",
+        "searchPlaceholder": "Cerca servizi o trattamenti...",
+        "lastAppointment": "Ultimo Appuntamento",
+        "noAppointments": "Nessun appuntamento recente",
+        "nearbyShops": "Barbieri Vicini",
+        "popularServices": "Servizi Popolari"
+    },
+    "services": {
+        "title": "Servizi",
+        "allCategories": "Tutte le Categorie",
+        "haircut": "Taglio Capelli",
+        "shave": "Barba",
+        "treatments": "Trattamenti",
+        "styling": "Styling",
+        "duration": "Durata",
+        "price": "Prezzo",
+        "selectService": "Seleziona Servizio",
+        "serviceDetails": "Dettagli Servizio",
+        "popular": "Popolare"
+    },
+    "booking": {
+        "title": "Prenota",
+        "selectServices": "Seleziona Servizi",
+        "selectStaff": "Seleziona Barbiere",
+        "selectDateTime": "Seleziona Data e Ora",
+        "checkout": "Riepilogo",
+        "totalDuration": "Durata Totale",
+        "totalPrice": "Totale",
+        "paymentMethod": "Metodo di Pagamento",
+        "payOnline": "Paga Online",
+        "payInPerson": "Paga in Negozio",
+        "onlineDiscount": "Sconto 5% pagando online",
+        "confirmBooking": "Conferma Prenotazione",
+        "bookingConfirmed": "Prenotazione Confermata!",
+        "noSlotsAvailable": "Nessun orario disponibile",
+        "selectAtLeastOne": "Seleziona almeno un servizio"
+    },
+    "appointments": {
+        "title": "I Miei Appuntamenti",
+        "upcoming": "Prossimi",
+        "past": "Passati",
+        "status": "Stato",
+        "pending": "In Attesa",
+        "confirmed": "Confermato",
+        "completed": "Completato",
+        "cancelled": "Annullato",
+        "reschedule": "Riprogramma",
+        "cancelAppointment": "Annulla Appuntamento"
+    },
+    "profile": {
+        "title": "Profilo",
+        "editProfile": "Modifica Profilo",
+        "accountSettings": "Impostazioni Account",
+        "notifications": "Notifiche",
+        "language": "Lingua",
+        "membershipTier": "Livello Membership",
+        "appointmentReminders": "Promemoria Appuntamenti",
+        "promotions": "Promozioni e Offerte"
+    },
+    "admin": {
+        "dashboard": "Dashboard",
+        "calendar": "Calendario",
+        "services": "Gestione Servizi",
+        "analytics": "Analytics",
+        "todaysAppointments": "Appuntamenti Oggi",
+        "revenue": "Ricavi",
+        "clients": "Clienti",
+        "addService": "Aggiungi Servizio",
+        "editService": "Modifica Servizio",
+        "deleteService": "Elimina Servizio"
+    }
+}
