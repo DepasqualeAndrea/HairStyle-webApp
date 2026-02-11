@@ -1,107 +1,41 @@
 export interface Service {
     id: string;
     name: string;
-    description: string;
-    duration: number; // minuti
-    price: number; // centesimi (es: 3500 = €35.00)
-    category: 'capelli' | 'barba' | 'trattamenti' | 'styling';
-    isActive: boolean;
-    imageUrl?: string;
-    isPopular?: boolean;
+    price: number;
+    duration_min: number; // Active work time (e.g. applying color)
+    processing_time_min?: number; // Idle time (e.g. color setting) - Staff is free here!
+    category: 'Hair' | 'Beard' | 'Color' | 'Treatment' | 'Styling';
+    target_gender: 'Male' | 'Female' | 'Unisex';
+    description?: string;
+    image_url?: string;
 }
 
-export interface Staff {
+export interface Product {
     id: string;
     name: string;
-    role: string;
-    bio?: string;
-    photoUrl?: string;
-    rating: number;
-    reviewCount: number;
-    specialties: string[];
-    isActive: boolean;
-}
-
-export interface TimeSlot {
-    startTime: Date;
-    endTime: Date;
-    isAvailable: boolean;
-}
-
-export interface StaffSchedule {
-    staffId: string;
-    date: string; // YYYY-MM-DD
-    workingHours: {
-        start: string; // HH:mm
-        end: string;
-    };
-    breaks: {
-        start: string;
-        end: string;
-        label: string;
-    }[];
-    bookedSlots: {
-        start: string;
-        end: string;
-        appointmentId: string;
-    }[];
+    description: string;
+    price: number;
+    image_url: string;
+    stock_qty: number;
 }
 
 export interface Appointment {
     id: string;
-    userId: string;
-    staffId: string;
-    serviceIds: string[];
+    user_id: string;
     date: string;
-    startTime: string;
-    endTime: string;
-    status: 'pending' | 'confirmed' | 'completed' | 'cancelled';
-    totalPrice: number;
-    totalDuration: number;
-    paymentMethod: 'online' | 'in_person';
-    paymentStatus: 'paid' | 'pending' | 'failed';
-    notes?: string;
-    createdAt: Date;
-    updatedAt: Date;
+    start_time: string;
+    services: Service[];
+    products: Product[];
+    total_price: number;
+    status: 'pending' | 'confirmed' | 'cancelled' | 'completed' | 'no_show';
 }
 
-export interface User {
+export interface UserProfile {
     id: string;
+    full_name: string;
+    phone: string;
     email: string;
-    name: string;
-    phone?: string;
-    photoUrl?: string;
-    membershipTier?: 'standard' | 'gold' | 'platinum';
-    notificationPreferences: {
-        appointmentReminders: boolean;
-        promotions: boolean;
-    };
-    createdAt: Date;
-}
-
-export interface Database {
-    public: {
-        Tables: {
-            services: {
-                Row: Service;
-                Insert: Omit<Service, 'id'>;
-                Update: Partial<Omit<Service, 'id'>>;
-            };
-            staff: {
-                Row: Staff;
-                Insert: Omit<Staff, 'id'>;
-                Update: Partial<Omit<Staff, 'id'>>;
-            };
-            appointments: {
-                Row: Appointment;
-                Insert: Omit<Appointment, 'id' | 'createdAt' | 'updatedAt'>;
-                Update: Partial<Omit<Appointment, 'id' | 'createdAt' | 'updatedAt'>>;
-            };
-            users: {
-                Row: User;
-                Insert: Omit<User, 'id' | 'createdAt'>;
-                Update: Partial<Omit<User, 'id' | 'createdAt'>>;
-            };
-        };
-    };
+    avatar_url?: string;
+    loyalty_points: number;
+    technical_notes?: string; // Admin only: "Formula colore: 5.0 Wella..."
 }

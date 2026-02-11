@@ -5,33 +5,33 @@ module.exports = {
         "./app/**/*.{js,jsx,ts,tsx}",
         "./components/**/*.{js,jsx,ts,tsx}"
     ],
-    presets: [require("nativewind/preset")],
     theme: {
         extend: {
             colors: {
-                // Background colors
-                'bg-primary': '#0F0F0F',
-                'bg-secondary': '#1C1C1E',
-                'bg-tertiary': '#2C2C2E',
+                // Background colors - Dark theme
+                'bg-primary': '#0F172A', // Dark navy/slate
+                'bg-secondary': '#1E293B', // Slightly lighter
+                'bg-tertiary': '#2C2C2E', // Card backgrounds
+                'bg-input': '#F1F5F9', // Light input fields
 
-                // Accent colors
-                'accent-gold': '#DCCAAB',
-                'accent-gold-dark': '#C4B093',
-                'accent-green': '#10B981',
-                'accent-red': '#EF4444',
-                'accent-yellow': '#F59E0B',
+                // Accent colors - ROSA only (no gold)
+                'accent-pink': '#FF4D6D', // Primary accent (ROSA)
+                'accent-pink-dark': '#E91E63', // Hover/active state
 
                 // Text colors
-                'text-primary': '#FFFFFF',
-                'text-secondary': '#9CA3AF',
-                'text-tertiary': '#6B7280',
+                'text-primary': '#F8FAFC', // Off-white
+                'text-secondary': '#94A3B8', // Grey-blue
+                'text-tertiary': '#6B7280', // Lighter grey
+                'text-dark': '#0F172A', // For inputs on light bg
             },
             fontFamily: {
                 sans: ['Inter', 'system-ui', 'sans-serif'],
+                display: ['Poppins', 'sans-serif'], // For "Hair Style" title if we add font later
             },
             borderRadius: {
                 'pill': '9999px',
-                'card': '24px',
+                'card': '16px',
+                'input': '12px',
                 'button': '28px',
             },
             spacing: {

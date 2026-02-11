@@ -12,7 +12,9 @@ const i18n = new I18n({
 });
 
 // Imposta locale di default
-i18n.locale = Localization.locale || 'it-IT';
+// In expo-localization v17+, usiamo getLocales() invece di locale
+const deviceLocale = Localization.getLocales()[0]?.languageTag || 'it-IT';
+i18n.locale = deviceLocale;
 i18n.enableFallback = true;
 i18n.defaultLocale = 'it-IT';
 

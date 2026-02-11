@@ -32,7 +32,7 @@
         "searchPlaceholder": "Search services or treatments...",
         "lastAppointment": "Last Appointment",
         "noAppointments": "No recent appointments",
-        "nearbyShops": "Nearby Barbers",
+        "nearbyShops": "Nearby Salons",
         "popularServices": "Popular Services"
     },
     "services": {
@@ -51,7 +51,7 @@
     "booking": {
         "title": "Book",
         "selectServices": "Select Services",
-        "selectStaff": "Select Barber",
+        "selectStaff": "Select Stylist",
         "selectDateTime": "Select Date & Time",
         "checkout": "Summary",
         "totalDuration": "Total Duration",

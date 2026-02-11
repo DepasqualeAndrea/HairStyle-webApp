@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Home, Search, Calendar, User } from 'lucide-react-native';
+import { Home, Search, ShoppingBag, Calendar, User } from 'lucide-react-native';
 
 export default function TabsLayout() {
     return (
@@ -14,7 +14,7 @@ export default function TabsLayout() {
                     paddingBottom: 10,
                     paddingTop: 10,
                 },
-                tabBarActiveTintColor: '#DCCAAB',
+                tabBarActiveTintColor: '#FF4D6D',
                 tabBarInactiveTintColor: '#6B7280',
                 tabBarLabelStyle: {
                     fontSize: 12,
@@ -26,28 +26,35 @@ export default function TabsLayout() {
                 name="index"
                 options={{
                     title: 'Home',
-                    tabBarIcon: ({ color, size }) => <Home color={color} size={size} />,
+                    tabBarIcon: (props) => <Home {...props} />,
                 }}
             />
             <Tabs.Screen
                 name="explore"
                 options={{
                     title: 'Servizi',
-                    tabBarIcon: ({ color, size }) => <Search color={color} size={size} />,
+                    tabBarIcon: (props) => <Search {...props} />,
+                }}
+            />
+            <Tabs.Screen
+                name="shop"
+                options={{
+                    title: 'Shop',
+                    tabBarIcon: (props) => <ShoppingBag {...props} />,
                 }}
             />
             <Tabs.Screen
                 name="bookings"
                 options={{
                     title: 'Appuntamenti',
-                    tabBarIcon: ({ color, size }) => <Calendar color={color} size={size} />,
+                    tabBarIcon: (props) => <Calendar {...props} />,
                 }}
             />
             <Tabs.Screen
                 name="profile"
                 options={{
                     title: 'Profilo',
-                    tabBarIcon: ({ color, size }) => <User color={color} size={size} />,
+                    tabBarIcon: (props) => <User {...props} />,
                 }}
             />
         </Tabs>

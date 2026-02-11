@@ -17,7 +17,7 @@ export function getAvailableSlots(
 ): TimeSlot[] {
     // 1. Calcola la durata totale necessaria
     const totalDuration = selectedServices.reduce(
-        (sum, service) => sum + service.duration,
+        (sum, service) => sum + service.duration_min,
         0
     );
 
@@ -111,7 +111,7 @@ export function calculateTotalPrice(services: Service[]): number {
  * Calcola la durata totale dei servizi selezionati
  */
 export function calculateTotalDuration(services: Service[]): number {
-    return services.reduce((sum, service) => sum + service.duration, 0);
+    return services.reduce((sum, service) => sum + service.duration_min, 0);
 }
 
 /**
