@@ -253,7 +253,7 @@ curl https://iieqbljnxkfcmpipjner.supabase.co
 
 ## 👨‍💻 Sviluppatore
 
-Progetto inizializzato con Antigravity AI - 10 Febbraio 2026
+Progetto inizializzato Da Andrea de Pasquale - 10 Febbraio 2026
 
 ---
 
